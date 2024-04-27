@@ -6,18 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="{% static 'styles.css' %}" />
-  <title>Document</title>
+  <title>API BLOG</title>
 </head>
 <body>
-  <h1>Hello world ! We are using API's today </h1>
-  {{result}}
-  
-  <p>Lets see if this will stay</p>
-  
-  {{result2}}
-
-  <h2>Random Animals</h2>
-  <img src={{result2}} alt="Random Pet">
+  <div class='container'>
+    <h1 class='title'>Hello world ! We are using API's today </h1>
+    
+    <p>Lets see if this will bring a good looking cat:</p>
+    <img src="{{result3}}" alt="Its a cat">
+    
+    <h2 class='title'>Random Types of Canines</h2>
+    <p>This is the <span id='breed'>{{breed_name}}</span> breed  : </p>
+    <img src={{result2}} alt="Random Pet">
+  </div>
   
 </body>
 </html>
